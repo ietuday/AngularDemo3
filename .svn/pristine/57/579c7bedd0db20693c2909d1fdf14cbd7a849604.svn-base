@@ -1,0 +1,15 @@
+<div class="mLoginPageContent">
+  <div id="bg">
+    <img src="assets/logo.png" style="width: 30%;margin-top: 18%;">
+  </div>
+  <form class="mLoginPageForm" action="">
+    <label for=""></label>
+    <input type="text" pInputText name="" id="" placeholder="   E-mail address" class="email" />
+    <label for=""></label>
+    <input type="password" name="" id="" placeholder="   Password" class="pass">
+    <div class="mLoginPageSignIn" type="submit">Sign In</div>
+  </form>
+  <div class="mLoginRememberPass">Remember Password?</div>
+  <div class="mLoginPassIcon"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+  <div class="mLoginForgotPass">Forgot Password?</div>
+</div>

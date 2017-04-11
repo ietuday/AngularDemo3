@@ -1,0 +1,92 @@
+<div class="mContainerPageContent">
+<div class="mContainerSearchBlock">
+    <div class="mContainerSearchInput">
+        <i class="fa fa-search mContainerSearchIcon" aria-hidden="true"></i>
+        <input type="text" pInputText (click) ="containerSearch()" class="mContainerSearchInputBlock" placeholder="                                     Search         " />
+
+    </div>
+</div>
+
+    <div *ngIf="enableSearchOption">
+        <div class="mContainerSearchOption">
+            <div class="mContainerSearchOptionDiv">
+                <div class="mContainerPickCarrier">PickUpFromCarrier</div>
+                <div class="mContainerPickAnyBlock">Select
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="mContainerSearchOptionDiv">
+                <div class="mContainerPickReserved">Reserved</div>
+                <div class="mContainerPickAnyBlock">Select
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="mContainerSearchOptionDiv">
+                <div class="mContainerPickSize">ContainerSize</div>
+                <div class="mContainerPickAnyBlock">Select
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="mContainerSearchHandlerBlock">
+            <div class="mContainerCancelButton" (click) = "cancelSearch()">Search</div>
+        </div>
+
+    </div>
+
+<div class="mContainerReserveBlock">
+    <div class="mContainerReserveButtonBlock">
+        <div class="mContainerReserveButton">
+            Reserve for Stuffling
+        </div>
+    </div>
+    <div class="mContainerReserveIconBlock">
+        <div class="mContainerReservePencilIcon"><i class="fa fa-pencil-square-o mContainerReservePencil" aria-hidden="true"></i></div>
+         <div class="mContainerReserveTrashIcon"><i class="fa fa-trash-o mContainerReserveTrash" aria-hidden="true"></i></div>
+    </div>
+</div>
+
+
+<div class="mContainerListBlock">
+
+    <div class="mContainersDetailsBlock">
+      <!-- <div class="mContainerRedCircle"></div> -->
+      <!-- <div style="float:left;"> -->
+        <div class="mContainerNumber">UACU5936899</div>
+        <div class="mContainerName">
+          <div class="mContainercarrierBlock">carrier</div>
+          <div class="mContainerOOCLBlock">OOCL</div>
+        </div>
+        <div class="mContainerPickupDate">15 FEB 2017-PickUp</div>
+      <!-- </div> -->
+    </div>
+    <div class="mContainersStatusBlock">
+        <div class="mContainersStatus">
+            <div><i class="fa fa-check-square-o mcontainersCheck" aria-hidden="true"></i></div>
+            <div class="mContainersReserved">Reserved</div>
+        </div>
+    </div>
+</div>
+
+<div class="mContainerListBlock" *ngFor="let container of dummyArray; let i = index;">
+    <div class="mContainersDetailsBlock">
+        <div class="mContainerNumber">UACU5936899</div>
+        <div class="mContainerName">
+          <div class="mContainercarrierBlock">carrier</div>
+          <div class="mContainerOOCLBlock">OOCL</div>
+        </div>
+        <div class="mContainerPickupDate">25 FEB 2017-WHS Gate-In</div>
+    </div>
+    <div class="mContainersStatusBlock">
+        <div class="mContainersStatus">
+            <div><i class="fa fa-check-square-o mcontainersCheck" aria-hidden="true"></i></div>
+            <div class="mContainersReserved">N Reserved</div>
+        </div>
+    </div>
+</div>
+
+
+</div>

@@ -1,0 +1,130 @@
+<div class="mainBody" *ngIf="false">
+
+  <!-- Header -->
+  <div *ngIf="headerLogin == false">
+    <div class="mainHeader">
+      <div class="headerBlock1">
+        <a class="fa o_menu_toggle fa-th headerLogo"></a>
+        <div class="toolbarTitle">EGS</div>
+      </div>
+      <div class="headerBlock2">
+        <div class="headerSubBlock1"></div>
+        <div class="headerSubBlock2">33333</div>
+        <div class="headerSubBlock3"><button class="headerRetireveBtn" type="button">Retrieve</button></div>
+      </div>
+      <div class="headerBlock3">
+        <div class="headerIconBlock"><i class="fa fa-question headerIcon" aria-hidden="true"></i></div>
+        <div class="headerIconBlock"><i class="fa fa-user headerIcon" aria-hidden="true"></i></div>
+        <div class="headerIconBlock"><i class="fa fa-sign-out headerIcon" aria-hidden="true"></i></div>
+      </div>
+    </div>
+
+    <!-- SideOut Menu -->
+    <div class="sideMenuBar">
+      <div class="sideMenuToogleBlock">
+        <div class="sideMenuToogle">
+          <i class="fa fa-angle-right" style="line-height: 22px;" aria-hidden="true"></i>
+        </div>
+      </div>
+      <br />
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-money" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <!-- SlideOut Menu -->
+    <div [class]='menuClassLeft' style="float:left; width:20%; background:rgb(245, 245, 245);">
+      <div class="sideMenuToogleBlock">
+        <div class="sideMenuToogle" (click)="toggleSideMenu()">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+      </div><br />
+      <div class="sideMenuItems">
+        MY QUICK LINKS
+      </div>
+      <div class="sideMenuItems">
+        MASTER
+      </div>
+      <div class="sideMenuItems">
+        DOMESTIC
+      </div>
+      <div class="sideMenuItems">
+        EXPORT
+      </div>
+      <div class="sideMenuItems">
+        IMPORT
+      </div>
+      <div class="sideMenuItems">
+        BILLING
+      </div>
+      <div class="sideMenuItems">
+        ADMIN
+      </div>
+      <div class="sideMenuItems">
+        REPORTS
+      </div>
+      <div class="sideMenuItems">
+        ELITETRAX
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="mainPageContent">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<!-- <div *ngIf *ngIf="pageName = 'mcontainers'"> -->
+
+<div class="mContainerHeader" *ngIf="pageName != 'login'">
+  <!-- <div class="mContainerHeader" *ngIf="false"> -->
+
+
+  <div class="mContainerHeaderBlanck">&nbsp;</div>
+  <div class="mContainerHeaderButtons">
+
+    <div class="mContainerHeaderContainerButton">Containers</div>
+    <div class="mContainerHeaderBookingButton">Booking</div>
+  </div>
+  <div class="mContainerLoggedUser">
+    <div><i class="fa fa-user-circle mContainerUserIcon" aria-hidden="true"></i></div>
+  </div>
+</div>
+<div class="mainBody">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="mContainerFooter" *ngIf="pageName != 'login'">
+  <!-- <div class="mContainerHeader" *ngIf="false"> -->
+<div class="mContainerFooterLeftDiv">
+<div class="mContainerFooterAddBlock"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+<div class="mContainerFooterFileBlock"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+<div class="mContainerFooterSheetBlock"><i class="fa fa-file-excel-o" aria-hidden="true"></i></div>
+</div>
+<div class="mContainerFooterBlanckDiv">&nbsp;</div>
+<div class="mContainerFooterRightDiv">Auto Reserve<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+</div>

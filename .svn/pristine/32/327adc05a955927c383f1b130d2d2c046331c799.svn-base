@@ -1,0 +1,201 @@
+@import '../../styles.scss';
+
+.mContainerPageContent{
+  min-height: 469px;
+  padding-top: 46px;
+}
+
+.mContainerSearchBlock{
+  height: 55px;
+  background: $egrayborder;
+}
+
+.mContainerReserveBlock{
+  height: 60px;
+}
+
+.mContainerListBlock{
+  border-top: 1px solid $egrayborder;
+  height: 63px;
+  border-bottom: 1px solid $egrayborder;
+}
+
+.mContainerSearchInputBlock{
+  margin-left: 12px;
+  margin-top: 13px;
+  width: 90%;
+}
+
+.mContainerReserveButton{
+  float: left;
+  margin-top: 13px;
+  padding: 5px;
+  color: $emaroon;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.mContainerReserveButtonBlock{
+  width: 50%;
+}
+
+.mContainerReserveIconBlock{
+  width: 50%;
+  float: left;
+}
+
+.mContainerReservePencil{
+  font-size: 200%;
+  margin-top: 10px;
+  margin-left: 60px;
+  color: $egrayfieldlabel;
+}
+
+.mContainerReservePencilIcon{
+  width: 50%;
+  float: left;
+}
+
+.mContainerReserveTrashIcon{
+  width: 50%;
+  float: left;
+}
+
+.mContainerReserveTrash{
+  font-size: 200%;
+  margin-top: 7px;
+  margin-left: 60px;
+  color: $egrayfieldlabel;
+}
+
+.mContainerReserveBlock{
+  background: $ebutterscotch;
+}
+
+.mContainersDetailsBlock{
+  width: 72%;
+  float: left;
+}
+
+.mContainersStatusBlock{
+  width: 28%;
+  float: left;
+}
+
+.mContainerNumber{
+  padding-left: 10%;
+  padding-top: 2%;
+  font-weight: bolder;
+}
+
+.mContainerName{
+  padding-left: 10%;
+}
+
+.mContainerPickupDate{
+  padding-left: 10%;
+  color:$egraymenulabel;
+  padding-top: 1%;
+}
+
+.mContainersStatus{
+  padding-top: 3%;
+}
+
+.mcontainersCheck{
+  font-size: 150%;
+  padding-left: 55%;
+  padding-top: 15%;
+}
+
+.mContainersReserved{
+  margin-left: 34%;
+  color: $egraymenulabel;
+  font-size: 75%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $egrayborder;
+}
+
+.mContainerSearchIcon{
+  margin-left: 145px;
+  margin-top: 18px;
+  z-index: 10;
+  position: absolute;
+  color: $egrayborder;
+}
+
+.mContainerPickCarrier{
+  padding: 10px;
+  width: 70%;
+  float: left;
+}
+
+.mContainerPickReserved{
+  padding: 10px;
+  width: 70%;
+  float: left;
+}
+
+.mContainerPickSize{
+  padding: 10px;
+  width: 70%;
+  float: left;
+}
+
+.mContainerSearchButton{
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+  background: $ewhite;
+
+}
+
+.mContainerCancelButton{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid $egrayborder;
+  background: $emaroon;
+  border-radius: 5px;
+}
+
+.mContainerSearchHandlerBlock{
+  background: $egrayfieldlabel;
+  border: 1px solid $egrayfieldlabel;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.mContainerPickAnyBlock{
+  padding: 6px;
+  width: 18%;
+  float: left;
+}
+
+.mContainerSearchOption{
+  height: 110px;
+}
+
+.mContainercarrierBlock{
+  width: 25%;
+  float: left;
+  background: $egrayborder;
+  text-align: center;
+}
+
+.mContainerSearchOptionDiv{
+  border-bottom: 1px solid $egrayborder;
+  height: 35px;
+}
+
+.mContainerRedCircle{
+  height: 18px;
+  background: $emaroon;
+  width: 5%;
+  border-radius: 10px;
+  float: left;
+  margin-top: 8px;
+  padding-left: 5px;
+
+}

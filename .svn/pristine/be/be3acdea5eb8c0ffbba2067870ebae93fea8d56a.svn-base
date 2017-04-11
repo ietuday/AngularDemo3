@@ -1,0 +1,18 @@
+<div class="mLoginPageContent">
+
+  <div class="mLoginEliteLogo">
+<img src="assets/logo.png" style="width: 30%;margin-top:10%">
+</div>
+  <div class="mLoginPageForm">
+    <label for=""></label>
+    <input type="text" pInputText name="" id="" [(ngModel)]="userName" placeholder="   E-mail address" class="email" />
+    <label for=""></label>
+    <input type="password" name="" id="" [(ngModel)]="password" placeholder="   Password" class="pass">
+    <div class="mLoginPageSignIn" type="submit">
+    <div class="mLoginSignIn" (click) = "login()">  Sign In</div>
+    </div>
+  </div>
+  <div class="mLoginRememberPass">Remember Password?</div>
+  <div class="mLoginPassIcon"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+  <div class="mLoginForgotPass">Forgot Password?</div>
+</div>

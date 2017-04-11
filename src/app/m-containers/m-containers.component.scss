@@ -1,0 +1,288 @@
+@import '../../styles.scss';
+
+//Standard Classes
+
+.mContaineroverlayPanel .ui-overlaypanel{
+width: 99%;
+top: 105px !important;
+left: 0px !important;
+}
+
+
+//Componnet Classes
+
+.mContainerPageContent{
+  min-height: 469px;
+  padding-top: 8px;
+}
+
+.mContainerSearchBlock{
+  height: 55px;
+  background: $egrayborder;
+}
+
+.mContainerReserveBlock{
+  height: 60px;
+}
+
+.mContainerListBlock{
+  border-top: 1px solid $egrayborder;
+  height: 63px;
+  border-bottom: 1px solid $egrayborder;
+}
+
+.mContainerSearchInputBlock{
+  margin-left: 12px;
+  margin-top: 13px;
+  width: 90%;
+}
+
+.mContainerReserveButton{
+  float: left;
+  margin-top: 13px;
+  padding: 5px;
+  color: $emaroon;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.mContainerReserveButtonBlock{
+  width: 50%;
+}
+
+.mContainerReserveIconBlock{
+  width: 50%;
+  float: left;
+}
+
+.mContainerReservePencil{
+  font-size: 200%;
+  margin-top: 10px;
+  margin-left: 60px;
+  color: $egrayfieldlabel;
+}
+
+.mContainerReservePencilIcon{
+  width: 50%;
+  float: left;
+}
+
+.mContainerReserveTrashIcon{
+  width: 50%;
+  float: left;
+}
+
+.mContainerReserveTrash{
+  font-size: 200%;
+  margin-top: 7px;
+  margin-left: 60px;
+  color: $egrayfieldlabel;
+}
+
+.mContainerReserveBlock{
+  background: $ebutterscotch;
+}
+
+.mContainersDetailsBlock{
+  width: 72%;
+  float: left;
+}
+
+.mContainersStatusBlock{
+  width: 28%;
+  float: left;
+}
+
+.mContainerNumber{
+  padding-left: 10%;
+  // padding-top:%;
+  font-weight: bolder;
+}
+
+.mContainerName{
+  padding-left: 10%;
+}
+
+.mContainerPickupDate{
+  padding-left: 10%;
+  color:$egraymenulabel;
+  padding-top: 1%;
+}
+
+.mContainersStatus{
+  padding-top: 3%;
+}
+
+.mcontainersCheck{
+  font-size: 150%;
+  padding-left: 55%;
+  padding-top: 15%;
+}
+
+.mContainersReserved{
+  margin-left: 34%;
+  color: $egraymenulabel;
+  font-size: 75%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $egrayborder;
+}
+
+.mContainerSearchIcon{
+  margin-left: 145px;
+  margin-top: 18px;
+  z-index: 10;
+  position: absolute;
+  color: $egrayborder;
+}
+
+.mContainerPickCarrier{
+  padding: 5px;
+  width: 50%;
+  float: left;
+}
+
+.mContainerPickReserved{
+  padding: 10px;
+  width: 70%;
+  float: left;
+}
+
+.mContainerPickSize{
+  padding: 10px;
+  width: 70%;
+  float: left;
+}
+
+.mContainerSearchButton{
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+  background: $ewhite;
+
+}
+
+.mContainerCancelButton{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid $egrayborder;
+  background: $emaroon;
+  border-radius: 5px;
+}
+
+.mContainerSearchHandlerBlock{
+  background: $egrayfieldlabel;
+  border: 1px solid $egrayfieldlabel;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.mContainerPickAnyBlock{
+  padding: 6px;
+  width: 30%;
+  float: right;
+  text-align: right;
+  // margin-right: -39px;
+}
+
+.mContainerBlackSearch{
+  width: 20%;
+  float: left;
+}
+
+.mContainerSearchOption{
+  height: 120px;
+}
+
+.mContainercarrierBlock{
+  width: 25%;
+  float: left;
+  background: $egrayborder;
+  text-align: center;
+}
+
+.mContainerSearchOptionDiv{
+  border-bottom: 1px solid $egrayborder;
+  height: 35px;
+}
+
+.mContainerRedCircle{
+  height: 18px;
+  background: $emaroon;
+  width: 5%;
+  border-radius: 10px;
+  float: left;
+  margin-top: 8px;
+  padding-left: 5px;
+
+}
+
+.slideoutShowTop {
+    opacity: 1;
+  left: 0px;
+  overflow: auto;
+  position: fixed;
+  width: 85%;
+  z-index: 9999;
+  top: 0px;
+  height: 100%;
+  -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.slideoutHideTop {
+    opacity: 1;
+  left: -85%;
+  overflow: auto;
+  position: fixed;
+  width: 85%;
+  z-index: 99;
+  top: 0px;
+  height: 100%;
+  // -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  // -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  // box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.slideoutShowBottom {
+    opacity: 0.8;
+  left: 85%;
+  overflow: auto;
+  position: fixed;
+  width: 15%;
+  z-index: 9999;
+  top: 0px;
+  height: 100%;
+  -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.slideoutHideBottom {
+    opacity: 0.5;
+  left: -15%;
+  overflow: auto;
+  position: fixed;
+  width: 15%;
+  z-index: 99;
+  top: 0px;
+  height: 100%;
+  -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}

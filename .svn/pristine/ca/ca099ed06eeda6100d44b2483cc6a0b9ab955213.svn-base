@@ -1,0 +1,30 @@
+<div class="mContainersPageContent">
+
+    <div class="mContainersMainDiv">
+        <div class="mContainersSearchBlock">
+            <div class="mContainersSearchInput"><input class="mContainersInput" type="text" pInputText placeholder="Search Order No" /></div>
+            <div class="mContainersSearchButton"><button pButton type="button" class="mContainersButton" label="Search"></button></div>
+        </div>
+    </div>
+    <div class="mContainerDetailsMainBlock" *ngFor="let i of dummyData">
+        <div class="mContainerDetailsLeftBlock">
+            <div class="mContainerDetailsLeftDetails">
+                <div class="mContainerDetailsLeftDesc"> A</div>
+            </div>
+        </div>
+        <div class="mContainerDetailsRightBlock">
+            <div class="mContainerDetailsRightLeft">
+                <div class="mContainerDetailsRightLeftFirst">6043665</div>
+                <div class="mContainerDetailsRightLeftSecond">Created On: 24 May 2016</div>
+                <div class="mContainerDetailsRightLeftThird">Dest: PORT KLANG</div>
+                <div class="mContainerDetailsRightLeftFourth">M.V.EVER LOGIC/1459-019E</div>              
+            </div>
+            
+            <div class="mContainerDetailsRightRt">
+                <div class="mContainerDetailsRightEtd">ETD:10 Jun 2016</div>
+            </div>
+        </div>
+         
+         <div class="mContainerDetailsMainspace">&nbsp;</div>
+    </div> 
+</div>

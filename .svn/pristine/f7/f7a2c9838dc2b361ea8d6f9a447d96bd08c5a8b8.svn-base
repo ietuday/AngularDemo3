@@ -1,0 +1,155 @@
+<div class="mainBody" *ngIf="false">
+
+  <!-- Header -->
+  <div *ngIf="headerLogin == false">
+    <div class="mainHeader">
+      <div class="headerBlock1">
+        <a class="fa o_menu_toggle fa-th headerLogo"></a>
+        <div class="toolbarTitle">EGS</div>
+      </div>
+      <div class="headerBlock2">
+        <div class="headerSubBlock1"></div>
+        <div class="headerSubBlock2">33333</div>
+        <div class="headerSubBlock3"><button class="headerRetireveBtn" type="button">Retrieve</button></div>
+      </div>
+      <div class="headerBlock3">
+        <div class="headerIconBlock"><i class="fa fa-question" aria-hidden="true"></i></div>
+        <div class="headerIconBlock"><i class="fa fa-user" aria-hidden="true"></i></div>
+        <div class="headerIconBlock"><i class="fa fa-sign-out" aria-hidden="true"></i></div>
+      </div>
+    </div>
+
+    <!-- SideOut Menu -->
+    <div class="sideMenuBar">
+      <div class="sideMenuToogleBlock">
+        <div class="sideMenuToogle">
+          <i class="fa fa-angle-right" style="line-height: 22px;" aria-hidden="true"></i>
+        </div>
+      </div>
+      <br />
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-money" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+      </div>
+      <div class="sideMenuItems">
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <!-- SlideOut Menu -->
+    <div [class]='menuClassLeft' style="float:left; width:20%; background:rgb(245, 245, 245);">
+      <div class="sideMenuToogleBlock">
+        <div class="sideMenuToogle" (click)="toggleSideMenu()">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+      </div><br />
+      <div class="sideMenuItems">
+        MY QUICK LINKS
+      </div>
+      <div class="sideMenuItems">
+        MASTER
+      </div>
+      <div class="sideMenuItems">
+        DOMESTIC
+      </div>
+      <div class="sideMenuItems">
+        EXPORT
+      </div>
+      <div class="sideMenuItems">
+        IMPORT
+      </div>
+      <div class="sideMenuItems">
+        BILLING
+      </div>
+      <div class="sideMenuItems">
+        ADMIN
+      </div>
+      <div class="sideMenuItems">
+        REPORTS
+      </div>
+      <div class="sideMenuItems">
+        ELITETRAX
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="mainPageContent">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<!-- <div *ngIf *ngIf="pageName = 'mcontainers'"> -->
+
+<div class="mobileHeader">
+<div class="mobileHeaderOSMBlock">
+  <div class="mobileHeaderOSM">Container Tracking</div>
+</div>
+<div class="mobileHeaderLogoutBlock">
+<div class="mobileHeaderLogout" (click)= 'mlogout()'>Logout</div>
+</div>
+</div>
+<div class="mainBody">
+<router-outlet></router-outlet>    
+</div>
+
+<!-- </div> -->
+<!-- <div *ngIf *ngIf="pageName = 'mcontainers'"> -->
+<!--*ngIf= enabFooter-->
+<div class="mobileFooter">
+    <div>
+        <div class="mobileFooterCreated"><i class="fa fa-pencil-square-o mobileFooterIconCreated" aria-hidden="true"></i>Created</div>
+        <div class="mobileFooterBlanck">&nbsp;</div>       
+        <div class="mobileFooterBooked"><i class="fa fa-square mobileFooterIconBooked" aria-hidden="true"></i>Booked</div>
+        <div class="mobileFooterBlanck">&nbsp;</div>
+        <div class="mobileFooterpacked"><i class="fa fa-square mobileFooterIconPacked" aria-hidden="true"></i>Packed</div>
+        <div class="mobileFooterBlanck">&nbsp;</div>
+        <div class="mobileFooterManifest"><i class="fa fa-square mobileFooterIconManifest" aria-hidden="true"></i>Manifest</div>
+    </div>
+
+</div>
+<!-- </div> -->
+
+
+
+
+
+<!-- <div [class]='menuClass'>
+<div [class]='menuClassLeft' style="float:left; width:85%; background-color: #FFC30D;">
+<div class="sideMenuHeaderBlock" style="padding-bottom: 0.1%;">
+<div class="sideMenuTitle">
+<div style="font-family: Rockwell;font-size: 22px;width: 100%;">mundaii.com</div>
+</div>
+</div>
+<div class="menuList" [routerLink]="['/m-home']" (click)='toggleSideMenu()'>Home</div>
+<div class="menuList" [routerLink]="['/m-about']" (click)='toggleSideMenu()'>About <span style="font-family: Rockwell;">mundaii</span></div>
+<div class="menuList" [routerLink]="['/m-features']" (click)='toggleSideMenu()'>Features</div>
+<div class="menuList" [routerLink]="['/m-pricing']" (click)='toggleSideMenu()'>Pricing</div>
+<div class="menuList" [routerLink]="['/m-terms-of-service']" (click)='toggleSideMenu()'>Terms of Service</div>
+<div class="menuList" [routerLink]="['/m-privacy-policy']" (click)='toggleSideMenu()'>Privacy Policy</div>
+</div>
+<div [class]='menuClassRight' style="float:left; width:15%; height:100%; background-color: gray;">
+<div class="toggleMenuBtn" (click)='toggleSideMenu()'>
+<i class="fa fa-arrow-left" aria-hidden="true"></i>
+</div>
+</div>
+</div> -->

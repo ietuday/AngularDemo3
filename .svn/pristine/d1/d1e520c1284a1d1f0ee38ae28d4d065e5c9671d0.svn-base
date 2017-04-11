@@ -1,0 +1,27 @@
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
+declare var $: any;
+
+@Component({
+  selector: 'mcontainers',
+  templateUrl: './m-containers.component.html',
+  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./m-containers.component.scss']
+})
+export class MobileContainersComponent implements OnInit {
+private dummyData:number[] = [1,2,3,4,5,6,7,8,9,10];
+  constructor(){
+
+//    setTimeout(() => {
+//     let elm1: any = $('.ui-button, button.ui-button.ui-state-default, .ui-button.ui-state-default');
+//     elm1[0]['style']['background'] = 'rgb(50,50,50)';
+//     elm1[0]['style']['border'] = '1px solid rgb(50,50,50)';
+//     elm1[0]['style']['padding'] = '6%';
+//     elm1[0]['style']['margin-left'] = '25%';
+//     elm1[0]['style']['margin-top'] = '7.5%';
+//    },100);
+  }
+
+  ngOnInit() {
+  }
+}

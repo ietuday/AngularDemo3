@@ -1,0 +1,91 @@
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {MenuItem} from 'primeng/primeng';
+import {Message} from 'primeng/primeng';
+
+
+declare var $: any;
+
+@Component({
+  selector: 'mtrack-container',
+  templateUrl: './m-track-container.component.html',
+  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./m-track-container.component.scss']
+})
+export class MobileTrackContainerComponent implements OnInit {
+private items: MenuItem[];
+msgs: Message[] = [];
+activeIndex: string = 'C';
+private dummyData:number[] = [1,2,3,4,5,6,7,8,9,10];
+
+  constructor(){
+	console.log("Inside MobileTrackContainersComponent");
+  }
+
+  ngOnInit() {
+this.items = [{
+                label: 'Created',
+            items: [
+                {label: 'New', icon: 'fa-plus'},
+                {label: 'Open', icon: 'fa-download'}
+            ]
+            }
+//            {
+//                label: 'Booked',
+//                command: (event: any) => {
+//                    this.activeIndex = 'C';
+//                    this.msgs.length = 0;
+//                    this.msgs.push({severity:'info', summary:'Seat Selection', detail: event.item.label});
+//                }
+//            },
+//            {
+//                label: 'Packed',
+//                command: (event: any) => {
+//                    this.activeIndex = 'C';
+//                    this.msgs.length = 0;
+//                    this.msgs.push({severity:'info', summary:'Pay with CC', detail: event.item.label});
+//                }
+//            },
+//            {
+//                label: 'Manifested',
+//                command: (event: any) => {
+//                    this.activeIndex = 'C';
+//                    this.msgs.length = 0;
+//                    this.msgs.push({severity:'info', summary:'Last Step', detail: event.item.label});
+//                }
+//            },
+//            {
+//                label: 'Sailed',
+//                command: (event: any) => {
+//                    this.activeIndex = 'C';
+//                    this.msgs.length = 0;
+//                    this.msgs.push({severity:'info', summary:'Last Step', detail: event.item.label});
+//                }
+//            },
+//            {
+//                label: 'Doc. Rec',
+//                command: (event: any) => {
+//                    this.activeIndex = 'C';
+//                    this.msgs.length = 0;
+//                    this.msgs.push({severity:'info', summary:'Last Step', detail: event.item.label});
+//                }
+//            },
+//            {
+//                label: 'Vess Arrived',
+//                command: (event: any) => {
+//                    this.activeIndex = 'C';
+//                    this.msgs.length = 0;
+//                    this.msgs.push({severity:'info', summary:'Last Step', detail: event.item.label});
+//                }
+//            },
+//            {
+//                label: 'Released',
+//                command: (event: any) => {
+//                    this.activeIndex = 'C';
+//                    this.msgs.length = 0;
+//                    this.msgs.push({severity:'info', summary:'Last Step', detail: event.item.label});
+//                }
+//            }
+//            
+        ];
+  }
+}

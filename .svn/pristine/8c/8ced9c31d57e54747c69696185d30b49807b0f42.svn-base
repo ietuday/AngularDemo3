@@ -1,0 +1,41 @@
+<div class="login">
+ <div class="login-header">
+      <div class="LoginEliteLogo">
+          <img src="assets/logo.png" style="width: 18%;">
+      </div>
+   <div class="LoginHeading1">
+       <div style="text-align: center;"><span style="color: rgb(146, 27, 49);font-weight: bolder;">Elite's</span> History</div>
+   </div>
+      <div>& Corporate</div>
+      <div>Vision & Mission</div>
+  </div>
+ <div class="login-form">
+     <input type="text" pInputText placeholder="User Id" [(ngModel)]="userName" required/>
+    <br>
+    <input type="password"pInputText placeholder="Password"[(ngModel)]="password" required/>
+    <br>
+     <p-dropdown [options]="customers" [(ngModel)]="selectCustomer" name="selectCustomer" [style]="{'max-width': '400px','width':'80%','line-height':'42px','border-radius':'5px','margin':'3px','outline':'none','padding-left':'10px','background':'#ffffff'}"></p-dropdown>
+    <br>
+     <button type="button" class="buttonLogin buttonRed" (click)="login()">SIGN IN</button>
+</div>
+</div>                                                                                                                                                                                  
+                                                                                                                                                                                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

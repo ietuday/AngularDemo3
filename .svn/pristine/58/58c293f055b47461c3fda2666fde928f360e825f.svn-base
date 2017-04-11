@@ -1,0 +1,442 @@
+@import '../../styles.scss';
+
+/** { box-sizing:border-box; }
+.loginMainBlock{
+  // width:13px;
+  width: 105.5%;
+  // height: 659px;
+  background: url("assets/fork-lift.jpg");
+  padding-top: 3px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.loginLogo{
+  margin-top: -103px;
+  margin-left: 66px;
+}
+
+.loginForm{
+	width: 400px;
+	margin: 130px auto;
+	padding: 48px 32px 32px 32px;
+	background: #fafafa;
+	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+
+.loginGroup {
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.loginInput{
+	font-size: 13px;
+	padding: 10px 20px 10px 0px;
+  margin-left: 23px;
+	-webkit-appearance: none;
+	display: block;
+	background: #fafafa;
+	color:  $egraymenulabel;
+  font-weight: bold;
+	width: 85%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid $egrayfieldlabel;
+}
+
+.loginButton{
+  margin-left: 23px;
+  width:85%;
+}
+.loginInput:focus { outline: none; }
+
+
+ Label 
+
+.loginLabel{
+	color: $egrayfieldlabel;
+	font-size: 12px;
+	font-weight: normal;
+	position: absolute;
+  margin-left: 17px;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	-webkit-transition:all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+ active 
+.loginInput:focus ~ .loginLabel, .loginInput.used ~ .loginLabel {
+	top: -10px;
+  font-size: 14px;
+  color: $egrayfieldlabel;
+  -webkit-transform: scale(.85);
+          transform: scale(.85); left:0.35px;
+
+}
+
+
+
+
+ Underline 
+.bar {
+	position: relative;
+	display: block;
+	width: 85%;
+  // background-color:gray;
+}
+
+
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+  margin-left: 23px;
+	position: absolute;
+	background: $emaroon;
+	-webkit-transition:all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after {
+  left:0%; }
+
+
+ active 
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+
+
+
+
+ active 
+.loginInput:focus ~ .bar:before {
+  width: 50%;
+  color: $egrayfieldlabel;
+
+}
+
+
+
+ Highlight 
+
+.highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+
+ active 
+.loginInput:focus ~ .highlight {
+	-webkit-animation: inputHighlighter 0.3s ease;
+	        animation: inputHighlighter 0.3s ease;
+}
+
+
+ Button 
+
+.signInButton {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  margin: .3em 0 1em 0;
+  width: 100%;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 0;
+
+  cursor: pointer;
+	background: $emaroon;
+}
+
+
+
+.footer{
+	text-align: center;
+	color: white;
+	font-size: 13px;
+	letter-spacing: .4px;
+}
+// **************************************************
+
+
+// ********************************************
+@media only screen and (min-width : 1800px)
+{
+	.loginForm{
+		width: 400px;
+		margin: 185px auto;
+		padding: 45px 30px 30px 30px;
+		background-color:#fafafa;
+		border: 1px solid #ebebeb;
+		box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+	}
+
+  .footer{
+  	text-align: center;
+  	color: white;
+  	font-size: 13px;
+  	letter-spacing: .4px;
+    padding-top:150px;
+  }
+}
+
+
+@media only screen and (max-width : 992px)
+{
+	html{
+	  background: url("fork-lift.jpg") center center fixed;
+		background-size: 992px 675px;
+	  background-repeat: no-repeat;
+	  // padding-top: 40px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	}
+
+	.loginForm{
+		width: 390px;
+		margin: 112px auto;
+		padding: 45px 30px 30px 30px;
+		background: #fafafa;
+		border: 1px solid #ebebeb;
+		box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+	}
+}
+
+@media only screen and (max-width : 768px)
+{
+	html{
+	  background: url("fork-lift.jpg") center center fixed;
+		background-size: 768px 675px;
+	  background-repeat: no-repeat;
+	  // padding-top: 40px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	}
+
+	.loginForm{
+		width: 375px;
+		margin: 112px auto;
+		padding: 42px 28px 28px 28px;
+		background: #fafafa;
+		border: 1px solid #ebebeb;
+		box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+	}
+}
+
+@media only screen and (max-width : 480px)
+{
+	html{
+	  background: url("fork-lift.jpg") center center fixed;
+		background-size: 480px 675px;
+	  background-repeat: no-repeat;
+	  // padding-top: 40px;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	}
+
+	.loginForm{
+		width: 350px;
+		margin: 112px auto;
+		padding: 39px 26px 26px 26px;
+		background: #fafafa;
+		border: 1px solid #ebebeb;
+		box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+	}
+}*/
+
+/*Login Form Css For Mobile*/
+
+/*
+body {
+  background:url("assets/layer4.png");
+  margin:0px;
+  font-family: 'Ubuntu', sans-serif;
+	background-size: 100% 110%;
+}*/
+
+.login {
+  margin:0 auto;
+  min-height: 344px;
+  background:url("assets/layer4.png");
+  /*height: 675px;*/
+  padding-top: 15%;
+  width: 100%;
+}
+.login-header {
+  color:#fff;
+  text-align:center;
+  font-size:250%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5%;
+}
+
+.LoginEliteLogo{
+    /*border: 1px solid black;*/
+}
+.login-form {
+  /*border:.5px solid #fff;*/
+  /*background:#4facff;*/
+  /*border-radius:10px;*/
+  /*box-shadow:0px 0px 10px #000;*/
+}
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  /*padding-top:15px;*/
+  padding-bottom:10%;
+  /*margin:5% auto;*/
+  text-align:center;
+  margin-left: -1%;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  max-width:400px;
+  width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="button"] {
+  height:30px;
+  width:100px;
+  background:#fff;
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+}
+.sign-up{
+  color:#f2f2f2;
+  margin-left:-70%;
+  cursor:pointer;
+  text-decoration:underline;
+}
+.no-access {
+  color:#E86850;
+  margin:20px 0px 20px -57%;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.try-again {
+  color:#f2f2f2;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.buttonLogin {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  margin: .3em 0 1em 0;
+  width: 83%;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  // -webkit-font-smoothing: antialiased;
+  text-align: center;
+  letter-spacing: 1px;
+  background: transparent;
+  border: 0;
+  height: 46px;
+  margin-top: -1px;
+  // border-bottom: 2px solid #3160B6;">
+  cursor: pointer;
+  -webkit-transition:all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.buttonRed {
+  background: $emaroon;
+  // text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+}
+
+.LoginHeading1{
+    height: 42px;
+}
+
+.login-form .ui-dropdown{
+    max-width: 400px !important;
+    width: 80% !important;
+    line-height: 3em !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    margin: 1em 2em !important;
+    border-radius: 5px !important;
+    border: 2px solid #f2f2f2 !important;
+    outline: none !important;
+    padding-left: 10px !important;
+}
+
+/*Media Querie*/
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

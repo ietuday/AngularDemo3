@@ -1,0 +1,123 @@
+@import '../../styles.scss';
+
+//Stand Classes
+
+.ui-inputtext{
+  padding: 10px !important;
+  width: 85% !important;
+}
+
+//Component Classes
+
+.mContainersPageContent{
+  min-height: 344px;
+  padding-top: 52px;
+}
+
+.mContainersMainDiv{
+  background: #c2c2d0;
+  height: 35px;
+  margin: -8px;
+  padding: 14px;
+}
+
+.mContainersSearchBlock{
+margin-top: -1%;
+}
+
+.mContainersSearchInput{
+  width: 70%;
+  float: left;
+}
+
+.mContainersSearchButton{
+  width: 30%;
+  float: left;
+  border-radius: 6px;
+  margin-top: -6px;
+  margin-left: -24px;
+}
+
+.mContainersButton{
+  background: $emaroon;
+}
+
+.mContainersButton .ui-button, button.ui-button.ui-state-default, .ui-button.ui-state-default{
+    background: $edarkgray;
+    border: 1px solid $edarkgray;
+    padding: 6%;
+    margin-left: 25%;
+    margin-top: 7.5%;
+    z-index: 10;
+    position: inherit;
+}
+
+.mContainerDetailsLeftBlock{
+    width: 30%;
+    float: left;
+}
+
+.mContainerDetailsRightBlock{
+    width: 70%;
+    float: right;
+}
+
+.mContainerDetailsMainBlock{
+    padding-top: 25px;
+    border-bottom: 1px solid $egrayborder;
+}
+
+.mContainerDetailsLeftDetails{
+    background: $epurple;
+    text-align: center;
+    height: 48px;
+    padding-top: 37px;
+    border-radius: 63px;
+    width: 80px;
+}
+
+.mContainerDetailsRightLeft{
+    width: 70%;
+    float: left;
+}
+
+.mContainerDetailsRightRt{
+    width: 30%;
+    float: right;
+
+}
+
+.mContainerDetailsRightLeftFirst{
+    font-weight: bolder;
+    font-size: 15px;
+    padding-bottom: 7px;
+}
+
+.mContainerDetailsRightLeftSecond{
+    font-size: 10px;
+    padding-bottom: 7px;
+}
+
+.mContainerDetailsRightLeftThird{
+    font-size: 10px;
+    padding-bottom: 7px;
+}
+
+.mContainerDetailsRightLeftFourth{
+    font-size: 10px;
+    padding-bottom: 7px;
+}
+
+.mContainerDetailsRightEtd{
+    font-size: 8px;
+    margin-left: 3px;
+    padding-bottom: 7px;
+}
+
+.mContainerDetailsLeftDesc{
+    margin-top: -5px;
+}
+
+.mContainerDetailsMainspace{
+ height: -25px;   
+}

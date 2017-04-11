@@ -1,0 +1,138 @@
+
+<div class="mTrackContainersPageContent">
+    <h1>Track Container</h1>
+    <!--<p-growl [value]="msgs"></p-growl>-->
+
+    <!--<h3 class="first">Basic</h3>-->
+    <!--<p-steps [model]="items" class="trackSteps" styleClass="steps-basic"></p-steps>-->
+
+    <!--<h3>Clickable</h3>-->
+    <!--<p-steps [model]="items" class="trackSteps" styleClass="steps-basic" [(activeIndex)]="activeIndex" [readonly]="false"></p-steps>-->
+    <!--<h3>Custom Style</h3>-->
+    <div>
+   
+        <!--<div style="width: 10%;float: left;">Created</div>-->
+<!--        <div style="width: 2.5%;float: left;">&nbsp;</div>
+        <div style="width: 10%;float: left;">Booked</div>
+        <div style="width: 2.5%;float: left;">&nbsp;</div>
+        <div style="width: 10%;float: left;">Packed</div> 
+        <div style="width: 2.5%;float: left;">&nbsp;</div>
+        <div style="width: 10%;float: left;">Manifested</div>
+        <div style="width: 2.5%;float: left;">&nbsp;</div>
+        <div style="width: 10%;float: left;">Sailed</div>
+        <div style="width: 2.5%;float: left;">&nbsp;</div>
+        <div style="width: 10%;float: left;">Doc. Rec</div>
+        <div style="width: 2.5%;float: left;">&nbsp;</div>
+        <div style="width: 10%;float: left;">Vess Arrived</div> 
+        <div style="width: 2.5%;float: left;">&nbsp;</div>
+        <div style="width: 10%;float: left;">Released</div>
+        <div style="width: 2.5%;float: left;">&nbsp;</div>-->
+    </div>
+    <div>
+        <p-steps [model]="items"  class="trackSteps" styleClass="steps-custom"></p-steps>
+    </div>
+    <div class="mTrackContainerSummaryBlock">
+        <div class="mTrackContainerNumber">
+            6043665 - ORDER Summary
+        </div>
+        <div class="mTrackContainerSummary">
+            <div class="mTrackContainerSummaryLeft">
+                <div class="mTrackContainerSummaryLeftFirst">
+                    <div style="font-size: 12px;line-height: 20px;">PO No.</div>
+                    <div style="font-size: 12px;line-height: 20px;">POL</div>
+                    <div style="font-size: 12px;line-height: 20px;">ETD POL</div>
+                    <div style="font-size: 12px;line-height: 20px;">Vessel</div>
+                    <div style="font-size: 12px;line-height: 20px;">Carrier</div>
+                    <div style="font-size: 12px;line-height: 20px;">BL No</div>
+                    <div style="font-size: 12px;line-height: 20px;">ATD POL</div>
+                </div>
+
+                <div class="mTrackContainerSummaryLeftBlanck">&nbsp;</div>
+
+                <div class="mTrackContainerSummaryLeftSecond">
+                    <div style="font-size: 12px;line-height: 20px;">4500046808</div>
+                    <div style="font-size: 12px;line-height: 20px;">DAMMAM</div>
+                    <div style="font-size: 12px;line-height: 20px;">10 June 2017</div>
+                    <div style="font-size: 12px;line-height: 20px;">M.V EVER LOGIC</div>
+                    <div style="font-size: 12px;line-height: 20px;">EVERGREEN</div>
+                    <div style="font-size: 12px;line-height: 20px;">EGLV295600016519</div>
+                    <div style="font-size: 12px;line-height: 20px;">10 June 2017</div>
+                </div>
+
+            </div>
+            <div class="mTrackContainerSummaryRight">
+                <div class="mTrackContainerSummaryRightFirst">
+                    <div style="font-size: 12px;line-height: 20px;">PO No.</div>
+                    <div style="font-size: 12px;line-height: 20px;">POL</div>
+                    <div style="font-size: 12px;line-height: 20px;">ETD POL</div>
+                    <div style="font-size: 12px;line-height: 20px;">Vessel</div>
+                    <div style="font-size: 12px;line-height: 20px;">Carrier</div>
+                    <div style="font-size: 12px;line-height: 20px;">BL No</div>
+                    <div style="font-size: 12px;line-height: 20px;">ATD POL</div>
+                </div>
+
+                <div class="mTrackContainerSummaryRightBlanck">&nbsp;</div>
+
+                <div class="mTrackContainerSummaryRightSecond">
+                    <div style="font-size: 12px;line-height: 20px;">4500046808</div>
+                    <div style="font-size: 12px;line-height: 20px;">DAMMAM</div>
+                    <div style="font-size: 12px;line-height: 20px;">10 June 2017</div>
+                    <div style="font-size: 12px;line-height: 20px;">M.V EVER LOGIC</div>
+                    <div style="font-size: 12px;line-height: 20px;">EVERGREEN</div>
+                    <div style="font-size: 12px;line-height: 20px;">EGLV295600016519</div>
+                    <div style="font-size: 12px;line-height: 20px;">10 June 2017</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="width: 10%;float: left;">Created</div>
+    <div class="mTrackContainercircleC">
+        <div class="mTrackContainerAlpha">C</div>
+    </div>
+    <div class="mTrackContaineStLine">
+        &nbsp;
+    </div>
+    
+     <div class="mTrackContainercircleB">
+        <div class="mTrackContainerAlpha">B</div>
+    </div>
+    <div class="mTrackContaineStLine">
+        &nbsp;
+    </div>
+    
+    <div class="mTrackContainercircleP">
+        <div class="mTrackContainerAlpha">P</div>
+    </div>
+    <div class="mTrackContaineStLine">
+        &nbsp;
+    </div>
+    
+        <div class="mTrackContainercircleM">
+        <div class="mTrackContainerAlpha">M</div>
+    </div>
+    <div class="mTrackContaineStLine">
+        &nbsp;
+    </div>
+    
+        <div class="mTrackContainercircleS">
+        <div class="mTrackContainerAlphaS">s</div>
+    </div>
+    <div class="mTrackContaineStLine">
+        &nbsp;
+    </div>
+    </div>
+    
+           <div [ngClass]="{'ui-steps ui-widget ui-helper-clearfix':true,'ui-steps-readonly':readonly}" [ngStyle]="style" [class]="styleClass">
+            <ul role="tablist">
+                <li *ngFor="let item of model; let i = index" class="ui-steps-item" #menuitem
+                    [ngClass]="{'ui-state-highlight':(i === activeIndex),'ui-state-default':(i !== activeIndex),
+                        'ui-state-disabled':(i !== activeIndex && readonly)}">
+                    <a class="ui-menuitem-link" (click)="itemClick($event, item, i)">
+                        <span class="ui-steps-number">'A'</span>
+                        <span class="ui-steps-title">Created</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
